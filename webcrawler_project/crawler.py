@@ -47,7 +47,7 @@ class WebCrawler:
         for depth in range(max_depth):
             new_urls = []
             for url in self.urls:
-                if self.url_count >= 100:
+                if self.url_count >= 10:
                     break
                 if url not in self.visited_urls:
                     self.visited_urls.add(url)
